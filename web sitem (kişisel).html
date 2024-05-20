@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="sitem.css">
+  <style>
+
+    body{
+      font-family: Arial, sans-serif ;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      background-color:#f0f0f0 ;
+      margin: 0;
+    }
+
+    .typing{
+      
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      font-size: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+    @keyframes typing{
+      from{width:0 ;}
+      to{width: 100%; }
+    }
+
+    @keyframes blink-caret{
+      from, to{border-color: transparent; }
+      50%{border-color: black;}
+    }
+  
+  </style>
+</head>
+<body>
+  <base href="" target="_blank">
+  <!-- yaptığım projeler -->
+  <ol id="listem" type="1">
+    <li>hesap makinesi</li>
+    <li>not defteri</li>
+    <li>taş,kağıt,makas</li>
+    <li>klavyede hızlı yazmak</li>
+    <li>to do list</li>
+    <li>linklerim</li>
+    <li>sanal klavye</li>
+    <li>random visit(rastgele tarım yapmak</li>
+
+  </ol>
+  
+  <p id="anms" class="oo"></p>
+ <p id="hakyazm" > Manisa celal bayar üniversitesi ekononmi ve finans 2. sınıf öğrencisiyim. <br> Frond end develeoper alanında kendimi geliştirmeye çalışıyorum  </p>
+   
+  <div   id="iltşim">   
+    
+    <!-- linkedin -->
+<a  href="https://www.linkedin.com/in/mesut-bu%C4%9Fra-uysal-16a1bb288/">  
+    <img src="c:\Users\buğra\Desktop\unnamed.png"   alt="linkedin">
+  </a>  
+<!-- email -->
+<a   href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvqrszWdJmrnTslGgXxXCcxKzbsxJQvRWXSLVkZNWnDBCMBKZrGjJClRKmqTGMNTHvcBMg">
+<img src="c:\Users\buğra\Desktop\6404bb00d054c-384x384.png" alt="email">
+</a>
+
+<!-- git hub -->
+<a  id="hr" href="https://github.com/bugra123uysal">
+<img src="c:\Users\buğra\Desktop\images.jpeg" alt="github">
+
+</a>
+
+</div>
+
+  <!-- sayfadaki bölümler -->
+  <div id="blm" > 
+  <p onclick="pp()" id="prjjm">projelerim</p>
+
+  <p onclick="hhkm()" id="hak" >hakımmdakiler</p>
+</div>
+  <p></p>
+
+<button onclick="kara()">karanlık mod</button>
+  <script src="sitem.js" ></script>
+
+
+  <div class="fade-in" >merhaba ben buğra</div>
+</body>
+</html>
